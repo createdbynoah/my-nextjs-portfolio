@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { DM_Sans, Big_Shoulders_Display } from 'next/font/google';
 import './globals.css';
+import Navbar from '@/components/Navbar';
 
 const dmSans = DM_Sans({
   variable: '--font-dm-sans',
@@ -27,7 +28,10 @@ export default function RootLayout({
       <body
         className={`${bigShouldersDisplay.variable} ${dmSans.variable} antialiased`}
       >
-        {children}
+        <div className="max-w-full lg:max-w-[80%] xl:max-w-[1000px] mx-auto px-8">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
