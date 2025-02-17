@@ -15,8 +15,8 @@ const DisplayText: React.FC<DisplayTextProps> = ({
     <h1
       className={`font-display ${
         variant === 'hero'
-          ? 'text-[120px] md:text-[260px]'
-          : 'text-[80px] md:text-[180px]'
+          ? 'text-[120px] lg:text-[260px]'
+          : 'text-[80px] lg:text-[180px]'
       } font-black text-primary text-center leading-[110%] -tracking-[0.02em] uppercase ${className}`}
     >
       {children}
